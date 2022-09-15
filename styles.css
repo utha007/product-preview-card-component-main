@@ -2,7 +2,7 @@ body {
     background-color: hsl(30, 38%, 92%);
 }
 
-@media only screen and (max-width: 1440px) {
+@media only screen and (min-width: 376px) {
     .text-container {
         background-color: hsl(0, 0%, 100%);
         max-height: 50vh;
@@ -23,19 +23,7 @@ body {
         margin-top: 25vh;
     }
 
-    p {
-        font-size: 14px;
-        font-family: Fraunces;
-        margin: 0;
-        padding: 0;
-        color: hsl(228, 12%, 48%);
-
-    }
-
-    h1 {
-        font-family: Montserrat;
-    }
-
+    
     .image>img {
         border-top-left-radius: 1em;
         border-bottom-left-radius: 1em;
@@ -43,72 +31,121 @@ body {
         max-width: 15em;
     }
 
-    .price {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-    .btn {
-        display: block;
-        text-align: center;
-    }
-
-    .description {
-        max-width: 12em;
-        display: flex;
-        flex-direction: column;
-        /* align-items: center; */
-        /* justify-content: center; */
-        margin-left: 1em;
-        margin-top: 0;
-        padding-top: 0;
-        text-align: left;
-    }
-
-    .btn {
-        color: hsl(0, 0%, 100%);
-        font-size: 14px;
-        font-family: Fraunces;
-        font-weight: 700;
 
 
-    }
 
-    a {
-        background-color: hsl(158, 36%, 37%);
-        border-radius: 0.5em;
-        height: 2em;
+}
+
+@media only screen and (max-width: 375px){
+    main {
         display: flex;
         justify-content: center;
-        align-items: center;
         flex-direction: column;
-        text-decoration: none;
-
-
+        max-height: 100vh;
+        margin-top: 25vh;
+        align-items: center;
     }
+    .text-container {
+        background-color: hsl(0, 0%, 100%);
+        max-height: 70vh;
+        margin-top: 0;
+        padding: 0;
+        border-bottom-right-radius: 1em;
+        border-bottom-left-radius: 1em;
+        min-width: 25em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
-    .new-price {
-        color: hsl(158, 36%, 37%);
-        font-weight: 500;
-        font-family: Montserrat;
-    }
+}
+.image>img {
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    max-height: 30vh;
+    min-width: 25em;
+    padding: 0;
+    margin: 0;
+}
+}
 
-    .old-price {
-        text-decoration: line-through;
-        color: hsl(228, 12%, 48%);
-        font-size: 14px;
-        font-weight: 400;
-    }
+p {
+    font-size: 14px;
+    font-family: Fraunces;
+    margin: 0;
+    padding: 0;
+    color: hsl(228, 12%, 48%);
 
-    .description>h2 {
-        color: hsl(212, 21%, 14%);
-        font-family: Montserrat;
-        font-weight: 700;
-    }
+}
 
-    .first-p {
-        letter-spacing: 0.5em;
-    }
+h1 {
+    font-family: Montserrat;
+}
 
+.btn {
+    color: hsl(0, 0%, 100%);
+    font-size: 14px;
+    font-family: Fraunces;
+    font-weight: 700;
+    align-self: center;
+
+
+}
+
+a {
+    background-color: hsl(158, 36%, 37%);
+    border-radius: 0.5em;
+    height: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+
+
+}
+
+.new-price {
+    color: hsl(158, 36%, 37%);
+    font-weight: 500;
+    font-family: Montserrat;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.description>h2 {
+    color: hsl(212, 21%, 14%);
+    font-family: Montserrat;
+    font-weight: 700;
+}
+
+.first-p {
+    letter-spacing: 0.5em;
+}
+.price {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn {
+    display: block;
+    text-align: center;
+}
+
+.description {
+    max-width: 15em;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    /* margin-left: 1em; */
+    margin: 0.5em;
+    padding-top: 0;
+    
 }
